@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import './App.css';
 import heroBg from './assets/hero-bg.svg';
@@ -173,7 +171,7 @@ function RegisterForm({ onSuccess }) {
     e.preventDefault();
     setError('');
     setSuccess('');
-    setLoading(true);
+    setLoading(true);+
     
     try {
       const res = await fetch('/api/auth/register', {
